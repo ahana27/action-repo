@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Event
+        run: echo "GitHub event triggered"
+
